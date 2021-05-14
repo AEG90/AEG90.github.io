@@ -1,0 +1,363 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/*---------------Header---------------*/
+
+.primary-header {
+    color: #990000;
+    font-weight: 400;
+    background-color: white;
+}
+
+.nav-header {
+    display: flex;
+    align-items: center;
+}
+
+.nav-header ul {
+    list-style-type: none;
+    overflow: hidden;
+    font-size: 32px;
+    font-family: Bebas Neue, sans-serif;
+    width: 100%;
+}
+
+.nav-header li a {
+    color: #990000;
+    display: block;
+    font-size: 32px;
+    text-align: center;
+    padding: 14px 16px;
+}
+
+.logo {
+    width: 90px;
+    height: 90px;
+    padding: 0 30px;
+}
+
+/*---------------Body---------------*/
+
+.tagline {
+    text-transform: uppercase;
+    font-size: 42px;
+    text-align: center;
+    font-family: Russo One, sans-serif;
+    color: #ffffdc;
+    font-weight: 400;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.text {
+    top: 50%;
+    left: 50%;
+    position: absolute;
+}
+
+
+.intro {
+    margin-top: -5px;
+    background-color: #aaa;
+    font-size: 22px;
+    text-align: center;
+    padding: 70px 30px;
+    font-family: Bebas Neue, sans-serif;
+    color: white;
+    font-weight: 100;
+    letter-spacing: .5px;
+    line-height: 33px;
+}
+
+.row_home {
+    display: inline-flex;
+}
+
+.column_home {
+    width: 50%;
+    position: relative;
+}
+
+.image_img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.image_overlay {
+    position: absolute;
+    border-radius: 5px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    opacity: 0;
+    background-color: #4D4D4F;
+    transition: .5s ease;
+}
+
+.column_home:hover .image_overlay {
+    opacity: 1;
+}
+
+.image_title {
+    font-family: Russo One, sans-serif;
+    color: white;
+    font-size: 36px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+/*---------------About Page---------------*/
+
+#about_time {
+    display: flex;
+    background-color: #251203;
+}
+
+.about_year {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+}
+
+.about_title {
+    font-family: Russo One, sans-serif;
+}
+
+.column_about {
+  float: left;
+  width: 20%;
+  height: 700px;
+  color: black;
+  text-align: center;
+  font-family: Bebas Neue, sans-serif;
+  font-size: 22px;
+  background-color: #4D4D4F;
+  position: relative;
+}
+
+/* Clear floats after the columns */
+.row_about:after {
+  content: "";
+  clear: both;
+}
+
+/*---------------Product Page---------------*/
+
+.product {
+    vertical-align: top;
+    padding: 80px 40px;
+    display: inline-block;
+    text-align: center;
+}
+
+.product_image {
+    width: 300px;
+    height: 280px;
+    display: block;
+    border-style: solid;
+}
+
+.product a {
+    border-style: solid;
+    border-width: 2px;
+    width: 300px;
+    height: 280px;
+    display: inline-block;
+    text-decoration: none;
+    color: #990000;
+    font-family: Bebas Neue, sans-serif;
+    font-size: 32px;
+}
+
+/*---------------Individual Product Page---------------*/
+
+.test_salami {
+    float: left;
+    padding-top: 100px;
+    padding-bottom: 140px;
+    padding-left: 120px;
+}
+
+.description_salami {
+    width: 33.33%;
+    text-align: center;
+    float: right;
+    font-size: 18px;
+    font-family: Bebas Neue, sans-serif;
+    color: #990000;
+    padding-top: 80px;
+    padding-right: 50px;
+}
+
+hr {
+    border: 1px solid #990000;
+    margin: 40px;
+}
+
+.purchase_select {
+    position: relative;
+    font-family: Bebas Neue, sans-serif;
+    width: 30%;
+    font-size: 20px;
+    height: 50px;
+    margin-top: 40px;
+}
+
+.purchase_select select {
+    display: none;
+
+}
+
+select {
+    background-color: #aaa;
+    color: #990000;
+}
+
+.add_button {
+    color: #990000;
+    font-family: Bebas Neue, sans-serif;
+    font-size: 18px;
+    width: 230px;
+    height: 50px;
+    vertical-align: text-top;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+    background-color: #eee;
+    margin: 40px;
+}
+
+/*---------------Contact Us Page---------------*/
+
+.ss {
+
+    width: 80%;
+    margin: 20px 150px;
+    height: 350px;
+}
+
+.inline input {
+  height: 35px;
+  width: 200px;
+  margin: 25px 25px 45px 25px;
+  background-color: #ccc;
+  border: 1px solid #ddd;
+  font-family: Bebas Neue, sans-serif;
+}
+
+.inline label {
+  display: inline-block;
+  margin: 25px -10px 45px 15px;
+  font-family: Bebas Neue, sans-serif;
+}
+
+.inline {
+    vertical-align: middle;
+    margin: 20px;
+    padding: 50px;
+    border: 2px solid;
+    flex-direction: column;
+    text-align: center;
+    font-family: Bebas Neue, sans-serif;
+  }
+
+textarea {
+    vertical-align: text-top;
+    width: 600px;
+    height: 140px;
+    border: 3px solid #cccccc;
+    background-color: #ccc;
+    font-family: Russo One, sans-serif;
+}
+
+/*---------------Sourcing Page---------------*/
+
+.border-class {
+    width: 50%;
+    margin: 40px 350px;
+    display: inline-block;
+    border: solid;
+    border-color: grey;
+    border-width: 300;
+    padding: 10px;
+}
+
+.farm_name {
+    color: white;
+    font-family: Bebas Neue;
+    font-size: 30px;
+    font-weight: 300;
+}
+
+.column_farm {
+    min-width: 250px;
+    width: 50%;
+    float: left;
+    padding: 10px 70px;
+}
+
+ .farm_tagline {
+    font-size: 42px;
+    margin: 50px;
+    text-transform: uppercase;
+    word-spacing: 10px;
+    text-decoration: underline;
+    text-align: center;
+    font-family: Russo One, sans-serif;
+    color: #ffffdc;
+    font-weight: 400;
+}
+/*---------------Footer---------------*/
+
+.nav-header {
+    color: white;
+    background-color: white;
+    width: 100%;
+}
+
+.nav-header li a {
+    display: inline-block;
+    padding: 18px;
+    float: left;
+    font-size: 20px;
+    font-family: Bebas Neue, sans-serif;
+    text-decoration: none;
+}
+
+.primary-header {
+    color: #990000;
+    font-weight: 400;
+    font-size: 30px;
+    background-color: white;
+    font-family: "Bungee", , sans-serif;
+}
