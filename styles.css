@@ -90,6 +90,7 @@ time, mark, audio, video {
 
 .row_home {
     display: inline-flex;
+    width: 100%;
 }
 
 .column_home {
